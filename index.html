@@ -1,0 +1,182 @@
+<html>
+
+<head>
+    <title>HOMEPAGE DATA ENTRY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>HALAMAN DATA ENTRY</h2>
+    <br>
+    <form name="biodata">
+        <table>
+            <tr>
+                <td>
+                    <strong>Nama</strong>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="nama" id="nama" class="nama">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>NRP</strong>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="nrp" id="nrp">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Kelas</strong>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="kelas" id="kelas">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Jenis Kelamin</strong>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" checked>
+                    <label for="male">pria</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">wainta</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Agama</strong>
+                </td>
+                <td>:</td>
+                <td>
+                    <select id="agama" name="agama" onchange="agamas()">
+                        <option value="islam">Islam</option>
+                        <option value="kristen">Kristen</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="budah">Budha</option>
+                        <option value="konghucu">Konghucu</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong> Tempat/Tanggal Lahir</strong>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="tempat" id="tempat">/<input type="text" nam e="tgl" id="tgl">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Alamat</strong>
+                </td>
+                <td>:</td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td></td>
+                <td>
+                    <textarea name="alamat" id="alamat"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Riwayat Pendidikan</strong>
+                </td>
+                <td>:</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <ol type="A">
+                        <li>
+                            SD : <input type="text" name="sd" id="sd">
+                        </li>
+                        <li>
+                            SMP : <input type="text" name="smp" id="smp">
+                        </li>
+                        <li>
+                            SMA : <input type="text" name="smk" id="smk">
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Email</strong>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="email" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Homepage </strong>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="web" id="web">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Hobby </strong>
+                </td>
+                <td>:</td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td></td>
+                <td>
+                    <textarea name="hobby" id="hobby"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Interest</strong>
+                </td>
+                <td>
+                    :
+                </td>
+                <td>
+                    <input type="checkbox" id="komputer" name="komputer" value="komputer">
+                    <label for="komputer"> komputer</label>
+                    <input type="checkbox" id="sepeda" name="sepeda" value="sepeda">
+                    <label for="sepeda"> sepeda</label>
+                    <input type="checkbox" id="membaca" name="membaca" value="membaca">
+                    <label for="membaca"> membaca</label>
+                    <input type="checkbox" id="menulis" name="menulis" value="menulis">
+                    <label for="menulis"> menulis</label>
+                </td>
+            </tr>
+            <tr> 
+                <td></td>
+                <td></td>
+                <td>
+                    <button onclick="save()">Save</button>
+                    <button>Reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="tugas6.js"></script>
+</body>
+
+
+</html>
